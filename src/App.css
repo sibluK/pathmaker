@@ -1,0 +1,43 @@
+.canvas {
+  position: relative;
+  min-width: 100vh;
+  min-height: calc(100vh - 50px);
+  text-align: center;
+  outline: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.node {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.node:hover {
+  border: 2px solid yellow;
+}
+
+.node.selected {
+  background-color: purple !important;
+}
+
+.node.start {
+  background-color: green;
+}
+
+.node.end {
+  background-color: red;
+}
+
+
+
